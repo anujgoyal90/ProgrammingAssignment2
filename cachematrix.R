@@ -9,7 +9,7 @@
 ##4. get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-    inv<-NULL
+    inv <- NULL
     set <- function(y){
             x <<- y
             inv <<- NULL
@@ -32,6 +32,6 @@ cacheSolve <- function(x) { ## Return a matrix that is the inverse of 'x'
     }
     data <- x$get()
     inv <- solve(data)
-    x$setinverse(inv)
+    x$setInverse(inv)
     inv
 }
